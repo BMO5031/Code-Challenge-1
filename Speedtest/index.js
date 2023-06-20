@@ -1,17 +1,16 @@
-function calculateDemeritPoints(speed) {
-    const speedLimit = 85;
-    const kmPerDemeritPoint =5;
- 
-     if (speed <= 85) asyn{
-       console.log("Ok");
-     } 
- 
-     else {
-       const demeritPoints = Math.floor((speed - 85) / 5);
-       console.log("Points: " + demeritPoints);
- 
-       if (demeritPoints > 12) {
-         console.log("License suspended");
-       }
-     }
-   }
+function checkspeed() {
+  const speed = parseFloat(prompt("Enter the car speed:"));
+
+  if (speed <= 70) {
+    return message.textContent = 'OK'
+  }else if (checkSpeed > 70 && checkSpeed < 130){
+    return points }
+    
+    const demeritpoints = Math.floor((speed - 70) / 5);
+
+    if (demeritpoints >= 12) {
+      return message.textContent = 'License suspended'
+  }
+}
+
+console.log(checkspeed(180))
